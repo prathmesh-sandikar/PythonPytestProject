@@ -4,9 +4,10 @@ import pytest
 
 
 
-# def test_add():
+@pytest.mark.xfail
 @pytest.mark.parametrize("a,b,c",[(3,2,5),(10,12,22),(2,5,7),(7,8,15)])
 def test_add(a,b,c):
+# def test_add():
     # x = 10
     # y = 25
     # result=Calculator.add()
@@ -15,9 +16,10 @@ def test_add(a,b,c):
     assert c == result
 
 
-# def test_subtract():
+
 @pytest.mark.parametrize("a,b,c",[(3,2,1),(12,11,1),(12,5,7),(11,5,6)])
 def test_subtract(a,b,c):
+# def test_subtract():
     # x=20
     # y=10
     # result= Calculator.substract(x,y)
